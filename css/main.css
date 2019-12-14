@@ -10,6 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: "Crimson Text", serif;
 
   color: #222;
 }
@@ -18,32 +19,129 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 article {
   max-width: 43em;
+  font-size: 100%;
+  line-height: 1.3rem;
+  padding: 0 .3rem;
+  margin: .5rem .8rem 1.6rem .7rem;
 }
 
 article h1 {
   font-weight: normal;
+  margin: 0;
 }
 
 article header {
   border-bottom: 1px solid #999;
+  padding: 1.2rem 0 .2rem;
 }
 
 article header p {
   font-style: italic;
+  margin-top: .5rem;
 }
 
 article > p:last-child {
   border-bottom: 1px solid #999;
+  padding: 0 0 1rem;
 }
 
 blockquote {
   max-width: 24em;
   color: #555;
   font-size: 1.125rem;
+  margin: 1.4rem 0 1.6rem;
+  line-height: 1.4rem;
 }
 
 .quote {
   color: #999;
+}
+
+article ol {
+  padding: 0;
+  margin-left: .8rem;
+  margin-bottom: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+article p {
+  margin: 1.1rem 0;
+}
+
+@media only screen and (min-width: 25em) {
+
+  article header p {
+    margin-top: .3rem;
+  }
+
+  article p {
+    margin: 1.2rem 0;
+  }
+
+  article ol {
+    margin: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    max-width: 43em;
+    font-size: 110%;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+  }
+
+  article p {
+    margin: 1.7rem 0;
+  }
+
+  blockquote {
+    margin: 1.6rem 0 2rem 2rem;
+  }
+
+  article ol {
+    line-height: 1.4rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    max-width: 60em;
+    font-size: 120%;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  article {
+    margin: .8rem .5rem 1.6rem 4.2rem;
+  }
+
+  article p {
+    margin: 2rem 0;
+  }
+
+  blockquote {
+    margin: 1.6rem 0 2rem 6rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    max-width: 90em;
+    font-size: 130%;
+    margin-bottom: 1.5rem;
+  }
+
 }
